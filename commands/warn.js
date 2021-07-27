@@ -6,8 +6,8 @@ sql.open('./bot.sqlite');
 const db = require('quick.db');
 
 exports.run = async (client, msg, args) => {
-  if(!message.member.hasPermission("MANAGE_MESSAGES")) {
-    message.reply('You need the "MANAGE_MESSAGES" permission to execute this command.')
+  if(!msg.member.hasPermission("MANAGE_MESSAGES")) {
+    msg.reply('You need the "MANAGE_MESSAGES" permission to execute this command.')
   }
     let member = msg.mentions.users.first();
     
